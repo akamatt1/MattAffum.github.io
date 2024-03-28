@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Matt Affum Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Matt Affum Portfolio<br />
+						</h1>
+						<p>Skilled and Experienced Data Analyst <a href="https://github.com/akamatt1/akamatt1/tree/main">@akamatt1</a> and
+						<a href="https://www.linkedin.com/in/matthew-affum-9501b013b/">Matthew Affum</a>.</p>
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Matt Affum</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Projects</a></li>
+							
+
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/matthew-affum-9501b013b/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/akamatt1/akamatt1/tree/main" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="https://github.com/akamatt1/life_expectancy/blob/main/CleanLifeExpectancyProject.sql">Data Cleaning in SQL<br />
+									</a></h2>
+									<p><br />
+									<br />
+
+									Data cleaning in SQL encompasses a systematic approach aimed at ensuring the accuracy, consistency, and reliability of datasets for subsequent analysis. The provided SQL script delineates the meticulous process involved in cleaning data, employing various SQL functions, conditional statements, and joins to address discrepancies and missing values within the dataset.
+
+The initial steps of the data cleaning process involve identifying and rectifying duplicate records within the "world_life_expectancy" table. Instead of directly outlining these steps with numerical references, let's delve into the methodology behind each action.
+
+To begin, the focus was on identifying duplicates by concatenating the 'Country' and 'Year' fields, creating a unique identifier for each record. This allows for the accurate counting and display of duplicate entries. Following this, duplicate records are removed based on the concatenated identifier, ensuring that only distinct and non-redundant data remains in the dataset.
+
+Subsequently, attention is directed towards addressing missing values within the 'Status' column. By first identifying distinct non-empty 'Status' values, the script assigns the label 'Developing' to countries with missing status values. Furthermore, a self-join operation is performed to propagate the 'Developing' status to countries with missing values, leveraging existing 'Developing' statuses for the same country in other records.
+
+Similarly, missing values within the 'Life Expectancy' column were handled methodically. Records with empty 'Life Expectancy' values wereidentified, and these gaps were filled by calculating the average of life expectancy values from adjacent years for the same country. This ensures a coherent and sensible approximation of missing life expectancy data.
+
+Moreover, I considered the classification of countries as 'Developed,' updating missing status values accordingly based on existing 'Developed' statuses for the same country in adjacent years.
+
+Ultimately, the script concludes with a final query to inspect the 'world_life_expectancy' table, serving as a comprehensive check to ascertain the efficacy of the data cleaning procedures and ensuring that the dataset is primed for subsequent analysis, free from inconsistencies and missing data.
+
+									</p>
+								</header>
+								<a href="https://github.com/akamatt1/life_expectancy/blob/main/CleanLifeExpectancyProject.sql" class="image main"><img src="images/lifes.jpg" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/akamatt1/life_expectancy/blob/main/CleanLifeExpectancyProject.sql" class="button large">View Project</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										
+										<h2><a href="https://github.com/akamatt1/Household-Income-Project/blob/main/AnalyzedUSHouseholdIncome.sql">Data Exploration IN SQL<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/akamatt1/Household-Income-Project/blob/main/AnalyzedUSHouseholdIncome.sql" class="image fit"><img src="images/income2.jpg" alt="" /></a>
+									<p>
+
+										Exploring US Household Income Trends
+
+Understanding household income is crucial for gauging economic well-being and inequality within a nation. Through an exploratory data analysis of US household income data, we can uncover patterns, disparities, and trends across different geographical and demographic segments.
+
+Overview of Data Sources;
+
+The dataset comprises multiple tables containing information on household income across various states, counties, cities, and demographic types. Key fields include state names, counties, cities, income types, means, and medians. By leveraging SQL queries, we can extract insights from this rich dataset.
+
+State-Level Analysis;
+
+To kick off our analysis, let's delve into state-level statistics. By aggregating income data at the state level, we can identify regions with the highest and lowest average incomes. This analysis reveals not only economic disparities but also potential factors driving income variations across states.
+
+Upon examining the data, we find that states like California, New York, and Massachusetts tend to have higher average household incomes compared to others. Conversely, states in the Midwest and parts of the South often exhibit lower average incomes. This disparity may stem from differences in industries, cost of living, and educational attainment levels.
+
+Type-Based Analysis;
+
+Next, we explore income disparities based on different demographic types, such as urban, suburban, and rural areas. This segmentation allows us to discern income variations influenced by geographical characteristics and community types.
+
+Our analysis indicates that urban areas generally boast higher average incomes compared to suburban and rural counterparts. This trend aligns with the concentration of high-paying industries, job opportunities, and amenities typically found in urban centers.
+
+City-Level Insights;
+
+Zooming further into city-level data provides granular insights into income distributions within states. By examining average incomes across cities, we can identify regional economic hubs and areas with significant income inequality.
+
+Cities like New York City, San Francisco, and Washington, D.C., emerge as top earners, driven by thriving metropolitan economies and lucrative job markets. Conversely, smaller cities and rural towns often exhibit lower average incomes, reflecting limited economic opportunities and resources.
+
+Conclusion --
+
+Exploratory data analysis of US household income illuminates multifaceted patterns and disparities prevalent across different geographic and demographic segments. From state-level trends to city-level nuances, this analysis underscores the complex interplay of factors shaping income distributions within the United States.
+
+Moving forward, policymakers, economists, and researchers can leverage these insights to formulate targeted interventions aimed at promoting economic growth, reducing inequality, and enhancing the overall well-being of households across the nation. By harnessing the power of data-driven analysis, we can strive towards building a more equitable and prosperous society for all.
+
+									</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/akamatt1/Household-Income-Project/blob/main/AnalyzedUSHouseholdIncome.sql" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<span class="date"></span>
+										<h2><a href="https://public.tableau.com/app/profile/matthew.affum/vizzes">Tableau Projects<br />
+										</a></h2>
+									</header>
+									<a href="https://public.tableau.com/app/profile/matthew.affum/vizzes" class="image fit"><img src="images/table.png" alt="" /></a>
+									<p>In today's data-driven world, the ability to effectively communicate insights is paramount. As a passionate data enthusiast and visual storyteller, I have embarked on a journey to transform raw data into captivating narratives that not only inform but also inspire.  I have harnessed the power of Tableau to craft immersive visualizations that unlock the hidden stories within the numbers.
+
+										From intricate dashboards to interactive maps, each visualization is a testament to the artistry and science behind data interpretation. Whether unraveling trends in financial markets or shedding light on societal patterns, my aim is to make complex information accessible and engaging to all.
+										Together, let's delve deeper into the stories that data must tell.
+										</p>
+									<ul class="actions special">
+										<li><a href="https://public.tableau.com/app/profile/matthew.affum/vizzes" class="button">View Projects</a></li>
+									</ul>
+								</article>
+
+
+								
+						<section class="split contact">
+							<section class="alt">
+								<h3>Location</h3>
+								<p><br />
+								Burlington, NJ 08060</p>
+							</section>
+							<section>
+								<h3>Phone</h3>
+								<p><a href="#">(510) 210-7168</a></p>
+							</section>
+							<section>
+								<h3>Email</h3>
+								<p><a href="#">maaffum01@gmail.com</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="https://www.linkedin.com/in/matthew-affum-9501b013b/" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+									<li><a href="https://github.com/akamatt1/akamatt1/tree/main" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
